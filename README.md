@@ -1,4 +1,4 @@
-![AWS-EOD Logo](https://raw.githubusercontent.com/checksomebytes/AWS-EOD/main/img/aws-eod-logo.svg)
+![AWS-EOD Logo](./img/aws-eod-logo.svg)
 
 
 # AWS-EOD 
