@@ -3,3 +3,6 @@
 # AWS-EOD 
 
 #### Reduce the blast radius within an AWS enivornment!
+
+![AWS-EOD Logo](./img/aws-eod-output.png)
+
