@@ -1,4 +1,4 @@
-![AWS-EOD Logo](./img/aws-eod-logo.png)
+![AWS-EOD Logo](./img/aws-eod-logo-150.png)
 # AWS-EOD 
 
 #### Reduce the blast radius within an AWS enivornment!
