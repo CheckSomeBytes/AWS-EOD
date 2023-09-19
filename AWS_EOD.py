@@ -25,7 +25,7 @@ argParser.add_argument("-a", "--aws_policies", action="store_true", help="Only c
 
 args = argParser.parse_args()
 
-print (args)
+# print (args)
 
 if args.output_file is not None:
     if args.output_file != "json" and args.output_file != "csv":
@@ -69,7 +69,7 @@ def get_aws_credentials(profile_name):
     try:
         session = boto3.Session(profile_name=profile_name)
         credentials = session.get_credentials()
-        print (credentials.access_key)
+        # print (credentials.access_key)
         aws_access_key_id = credentials.access_key
         aws_secret_access_key = credentials.secret_key
         aws_session_token = credentials.token
@@ -102,7 +102,7 @@ def get_account_info():
 
 if args.profile_creds is None and args.input_creds == False:
     print ("default")
-    print (get_default_aws_credentials())
+    # print (get_default_aws_credentials())
     aws_access_key_id, aws_secret_access_key, aws_session_token = get_default_aws_credentials()
 elif args.profile_creds is not None and args.input_creds != False:
     print ("Cannot select both input and aws profile name, choose either -i or -p <PROFILE_NAME>")
@@ -291,7 +291,7 @@ while 'Marker' in response:
 #####
 # Pull back AWS managed policies
 ####
-
+Marker = ""
 
 # Initial request to list policies
 response = iam.list_policies(
