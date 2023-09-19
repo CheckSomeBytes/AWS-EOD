@@ -164,6 +164,8 @@ def get_user_access_info(username):
                 access_key_date_last_used = access_key_date_last_used.strftime('%Y-%m-%d')
             except:
                 access_key_date_last_used = "N/A"
+            print("------ " + access_key['AccessKeyId'] + " [" + access_key['Status'] + "] - Last Used: " + access_key_date_last_used)
+
 
 
 def get_group_users(group):
