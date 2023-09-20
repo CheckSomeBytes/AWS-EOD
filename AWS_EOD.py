@@ -11,17 +11,18 @@ argParser = argparse.ArgumentParser(description="By default AWS_EOD will check a
 argParser.add_argument("-p", "--profile_creds", help="Specify AWS CLI profile to use for authentication")
 argParser.add_argument("-i", "--input_creds", action="store_true", help="User prompted to provide AWS Credentials")
 
+## Future Feature 
+# argParser.add_argument("-f", "--format", help="Output file format, supports json or csv")
+# argParser.add_argument("-o", "--output_file", help="Name of the output file")
 
-argParser.add_argument("-f", "--format", help="Output file format, supports json or csv")
-argParser.add_argument("-o", "--output_file", help="Name of the outpu file")
+## Future Feature 
+# argParser.add_argument("-s", "--sensitive_actions", action="store_true", help="Only check policies against list of sensitive actions, skip wildcard checks")
+# argParser.add_argument("-w", "--wildcard_actions", action="store_true", help="Only check policies for wildcard actions, skip sensitive actions checks")
+# argParser.add_argument("-r", "--remove_resource_check", action="store_true", help="Removes the check for unrestricted resources in the policy statement")
 
-argParser.add_argument("-s", "--sensitive_actions", action="store_true", help="Only check policies against list of sensitive actions, skip wildcard checks")
-argParser.add_argument("-w", "--wildcard_actions", action="store_true", help="Only check policies for wildcard actions, skip sensitive actions checks")
-argParser.add_argument("-r", "--remove_resource_check", action="store_true", help="Removes the check for unrestricted resources in the policy statement")
-
-
-argParser.add_argument("-u", "--user_policies", action="store_true", help="Only check User Managed policies")
-argParser.add_argument("-a", "--aws_policies", action="store_true", help="Only check AWS Managed policies")
+## Future Feature 
+# argParser.add_argument("-u", "--user_policies", action="store_true", help="Only check User Managed policies")
+# argParser.add_argument("-a", "--aws_policies", action="store_true", help="Only check AWS Managed policies")
 
 args = argParser.parse_args()
 
